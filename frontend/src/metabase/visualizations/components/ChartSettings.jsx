@@ -227,7 +227,7 @@ class ChartSettings extends Component {
 
     // default layout with visualization
     return (
-      <div>
+      <div className="flex flex-column spread">
         {sectionNames.length > 1 && (
           <div className="flex flex-no-shrink pl4 pt2 pb1">{sectionPicker}</div>
         )}
@@ -236,7 +236,7 @@ class ChartSettings extends Component {
             {widgetList}
           </div>
         ) : (
-          <div className="Grid">
+          <div className="Grid flex-full">
             <div className="Grid-cell Cell--1of3 scroll-y scroll-show border-right py4">
               {widgetList}
             </div>
